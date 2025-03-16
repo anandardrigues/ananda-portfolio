@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*,*::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:rgb(140,255,46);
+    --light-color:rgb(255,255,255);
+    --brand: #3a8878;
+    --dark: #212529;
+    --white: #ffffff;
+    --c-body:#666;
+    --bs-dark: #343a40;
+    --dark-2: #4d4d4d;
+    --dark-3: #6d6d6d;
+    --gray-1: #8d8d8d;
+    --gray-2: #adadad;
+    --c-brand-rgb: 78, 87, 212;
+    --c-body: #727272;
+    --bs-black: rgb(21, 21, 21);
+    --bs-gray-400: #ced4da;
+     --primary: #155bd5;
+  --primary-dark: #1c3ab6;
+  --primary-light: #e2f1ff;
+  --accent: #00d4d7;
+  --accent-dark: #00bac1;
+  --accent-light: #dff9f8;
+  --success: #13d527;
+  --success-dark: #00ae11;
+  --success-light: #eafbe7;
+  --secondary: #8f15d5;
+  --secondary-dark: #6013c7;
+  --secondary-light: #f4e5fa;
+  --info: #15b2d5;
+  --info-dark: #0f8ca8;
+  --info-light: #e0f5fa;
+  --caution: #dbbb25;
+  --caution-dark: #d58f15;
+  --caution-light: #fbf9e4;
+  --error: #e6185e;
+  --error-dark: #bf1257;
+  --error-light: #fce4eb;
+  --black: #1d1d1d;
+  --dark-1: #2d2d2d;
+  --dark-2: #4d4d4d;
+  --dark-3: #6d6d6d;
+  --gray-1: #8d8d8d;
+  --gray-2: #adadad;
+  --gray-3: #cdcdcd;
+  --gray-4: #e0e0e0;
+  --light-1: #efefef;
+  --light-2: #f5f5f5;
+  --light-3: #fafafa;
+  --white: #ffffff;
+  --gradient-1: linear-gradient(180deg, #155bd5 0%, #1c3ab6 100%);
+  --gradient-2: linear-gradient(180deg, #155bd5 13.02%, #00d4d7 85.42%);
+  --gradient-3: linear-gradient(180deg, #155bd5 0%, #8f15d5 100%);
+  --gradient-4: linear-gradient(180deg, #155bd5 0%, #13d527 100%);
+  --gradient-5: linear-gradient(180deg, #155bd5 0%, #15bbd5 100%);
+  --gradient-6: linear-gradient(180deg, #155bd5 0%, #dbbb25 100%);
+  --gradient-7: linear-gradient(180deg, #155bd5 0%, #e6185e 100%);
+  --gradient-8: linear-gradient(180deg, #1c3ab6 0%, #00bac1 100%);
+  --gradient-9: linear-gradient(180deg, #00d4d7 13.02%, #155bd5 85.42%);
+  --shadow-1: 0px 0px 1px rgba(40, 41, 61, 0.08),
+    0px 0.5px 2px rgba(96, 97, 112, 0.16);
+  --shadow-2: 0px 0px 1px rgba(40, 41, 61, 0.04),
+    0px 2px 4px rgba(96, 97, 112, 0.16);
+  --shadow-3: 0px 0px 2px rgba(40, 41, 61, 0.04),
+    0px 4px 8px rgba(96, 97, 112, 0.16);
+  --shadow-4: 0px 2px 4px rgba(40, 41, 61, 0.04),
+    0px 8px 16px rgba(96, 97, 112, 0.16);
+  --shadow-5: 0px 2px 8px rgba(40, 41, 61, 0.04),
+    0px 16px 24px rgba(96, 97, 112, 0.16);
+  --shadow-6: 0px 2px 8px rgba(40, 41, 61, 0.08),
+    0px 20px 32px rgba(96, 97, 112, 0.24);
+
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    position: relative;
+    --accent: #00d4d7;
+  --accent-dark: #00bac1;
+  --accent-light: #dff9f8;
+  --success: #13d527;
+  --success-dark: #00ae11;
+  --success-light: #eafbe7;
+  --secondary: #8f15d5;
+  --secondary-dark: #6013c7;
+  --secondary-light: #f4e5fa;
+  --info: #15b2d5;
+  --info-dark: #0f8ca8;
+  --info-light: #e0f5fa;
+  --caution: #dbbb25;
+  --caution-dark: #d58f15;
+  --caution-light: #fbf9e4;
+  --error: #e6185e;
+  --error-dark: #bf1257;
+  --error-light: #fce4eb;
+  --black: #1d1d1d;
+ --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
+  --transition: all 0.5s ease;
+    /* --transition: all .6s cubic-bezier(.165,.84,44,1); */
+  --shadow: 0px 15px 40px rgba(0,0,0,0.1); 
+  --font-family: "Inter", sans-serif;
+   --f-base:"Plus Jakarta Sans", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--dark);
+    letter-spacing: 1px;
+    font-weight: 500;
+ }
+
+ h1,h2,h3,h4,h5,h6 {
+    letter-spacing: 2px;
+ }
+ 
+ a {
+    text-decoration: none;
+    color: var(--dark);
+    transition: all 0.4s ease;
+ }
+ 
+ a:hover {
+    color: var(--brand);
+ }
+
+.text-brand{
+    color: var(--brand);
+}
+ 
+.section-title{
+    max-width: 560px;
+    margin: 0 auto 60px auto;
+}
+
+.section-title .line{
+    width: 60px;
+    height: 2px;
+    background-color: var(--primary-color);
+    display: inline-block;
+}
+
+.social-icon {
+    width: 25px;
+    height: 25px;
+    background-color: var(--primary-color);
+    color: white;
+    /*border: 2px solid var(--primary-color);*/
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 6px;
+}
+
+.social-icon:hover {
+    background-color: transparent;
+}
+
+/* .theme-shadow{
+    box-shadow: var(--box-shadow);
+  } */
+
+
+
+  .navbar {
+    box-shadow: var(--box-shadow);
+  }
+  
+
+.navbar-nav .nav-link {
+  font-weight: 300;
+  color: var(--c-dark);
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--c-brand);
+}
+
+
+
+.btn {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 0;
+    padding: 10px 24px;
+  }
+  
+  .btn-brand {
+    background-color: var(--brand);
+    border-color: var(--brand);
+    color: rgb(233, 217, 217);
+  }
+  
+  .btn-brand:hover {
+      background-color: var(--c-brand-light);
+      border-color: var(--c-brand-light);
+      color: var(--gray-2)
+    }
+
+    /* ===== Buttons Css ===== */
+.primary-btn {
+  background: var(--primary);
+  color: var(--white);
+  box-shadow: var(--shadow-2);
+}
+.active.primary-btn, .primary-btn:hover, .primary-btn:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: var(--shadow-4);
+}
+.deactive.primary-btn {
+  background: var(--gray-4);
+  color: var(--dark-3);
+  pointer-events: none;
+}
+
+.primary-btn-outline {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+.active.primary-btn-outline, .primary-btn-outline:hover, .primary-btn-outline:focus {
+  background: var(--primary-dark);
+  color: var(--white);
+}
+.deactive.primary-btn-outline {
+  color: var(--dark-3);
+  border-color: var(--gray-4);
+  pointer-events: none;
+}
+
+
+/*======================================
+    header Area CSS
+========================================*/
+
+
+
+.hero {
+  background-image: url('../images/WhatsApp\ Image\ 2022-07-18\ at\ 11.52.07.jpeg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(16,34,46,0.6);
+  z-index: -1;
+}
+
+.hero h1 {
+  letter-spacing: 0px;
+  font-weight: 600;
+}
+
+.hero h6 {
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+
+
+
+
+/* Iconbox */
+.iconbox {
+    width: 70px;
+    height: 70px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(var(--c-brand-rgb), 0.1);
+    color: var(--c-brand);
+    font-size: 34px;
+    flex: none;
+  }
+
+
+  
+  
+  
